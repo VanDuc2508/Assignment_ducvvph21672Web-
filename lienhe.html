@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment_PH21672</title>
+    <style>
+        body {
+            background-image: url('image.png');
+
+            background-size: cover;
+
+            background-position: center;
+
+        }
+
+        @media screen and (max-width: 1440px) {
+            body {
+                font-size: 13px;
+            }
+
+            .carousel-item {
+                width: 100%;
+                height: 400px;
+            }
+
+            .form-drop {
+                max-width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .carousel-item {
+                height: 200px;
+            }
+
+            body {
+                font-size: 10px;
+            }
+
+            .equal-height-img {
+                height: auto;
+                /* Điều chỉnh lại chiều cao để phù hợp với các thiết bị di động */
+                border-radius: 10px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            body {
+                font-size: 8px;
+            }
+
+            .carousel-item {
+                height: 120px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .desktop-header {
+                margin-top: 50px;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .title {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+
+        .header-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            color: white;
+            text-align: left;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .footer-text {
+            color: white;
+        }
+
+        .footer-border {
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-success py-1 px-0 px-sm-5 text-light d-flex justify-content-between">
+        <div class="d-flex text-end" style="font-size: 1em;">
+            <b>Đăng Nhập</b>
+        </div>
+    </div>
+    <nav style="background-color: #04c3d8; font-size: 1em;" class="navbar navbar-light navbar-expand-sm py-0">
+        <a href="#" class="navbar-brand ms-1 ms-sm-5">
+            <img src="logo.png" alt="Your Logo" style="height: 40px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active text-light">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tintuc.html" class="nav-link text-light">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lienhe.html" class="nav-link text-light">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="header-text desktop-header">Bắt đầu khó quên của bạn<br> là cuộc hành trình với chúng tôi
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="destination" class="form-label">Điểm đến:</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Nhập điểm đến">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numberOfPeople" class="form-label">Số người:</label>
+                        <input type="number" class="form-control" id="numberOfPeople" placeholder="Nhập số người">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="checkIn" class="form-label">Check in:</label>
+                            <input type="date" class="form-control" id="checkIn">
+                        </div>
+                        <div class="col">
+                            <label for="checkOut" class="form-label">Check out:</label>
+                            <input type="date" class="form-control" id="checkOut">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đặt Ngay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Phần footer -->
+    <div style="font-size: 0.7em;" class="container-fluid mx-0">
+        <div class="row justify-content-between">
+            <!-- Cột 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div style="font-weight: bold; border-bottom: 1px solid white;"
+                    class="container-fluid my-4 footer-border">
+                    Hỗ Trợ
+                </div>
+                <p class="my-1 footer-text footer-text">Chúng tôi sẽ hỗ trợ bạn:</p>
+                <p class="my-1 footer-text" style="font-weight: bold; word-wrap: break-word;">+039281223</p>
+                <div class="d-flex">
+                    <i class="bi bi-envelope me-1 footer-text"></i>
+                    <p style="word-wrap: break-word; overflow: hidden;" class="footer-text">fpt@gmail.com</p>
+                </div>
+            </div>
+            <!-- Cột 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div style="font-weight: bold; border-bottom: 1px solid white;"
+                    class="container-fluid my-4 footer-border footer-text">
+                    Thông Tin
+                </div>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="footer-text">.</p>
+            </div>
+            <!-- Cột 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div style="font-weight: bold; border-bottom: 1px solid white;"
+                    class="container-fluid my-4 footer-border footer-text">
+                    Tài Khoản
+                </div>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="my-1 footer-text">.</p>
+                <p class="footer-text">.</p>
+            </div>
+            <!-- Cột 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div style="font-weight: bold; border-bottom: 1px solid white;"
+                    class="container-fluid my-4 footer-border footer-text">
+                    Email Liên Lạc
+                </div>
+                <input style="font-size: 0.6em;" class="form-control d-flex text-center my-3 text-success footer-text"
+                    type="text" placeholder="Email" readonly>
+                <button style="width: 100%; font-size: 0.6em;" class="btn btn-success footer-text">
+                    <div class="d-flex justify-content-center">
+                        Đăng Ký
+                        <i class="bi bi-arrow-right-short footer-text"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Phần footer -->
+    <div style="background-color: #f9f9f9;" class="col-12">
+        <div class="d-flex justify-content-between">
+            <div style="margin: auto 0;" class="container-fluid">
+                @Copyright by Fpoly
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="logo.png" class="rounded" alt="Cinque Terre" width="7%">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
